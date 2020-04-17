@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    flex-direction: column;
+    width: 800px;
+    height: 100%;
+    border: 2px solid black;
+    background: grey;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 2px;
+}
+
+.shape {
+    min-width: 100px;
+    min-height: 100px;
+    margin: 2px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 2px;
+}
+
+.red {
+    background-color: red;
+    display: flex;
+}
+
+.blue {
+    background-color: blue;
+    display: flex;
+}
+
+.black {
+    background-color: black;
+    display: flex;
+}
+
+.yellow {
+    background-color: yellow;
+    display: flex;
+}
+
+.white {
+    background-color: white;
+    display: flex;
+}
+
+.double {
+    flex-grow: 2;
+}
+
+.trip {
+    flex-grow: 3;
+}
+
+.small {
+    min-height: 50px;
+    min-width: 50px;
+    flex-shrink: -1;
+}

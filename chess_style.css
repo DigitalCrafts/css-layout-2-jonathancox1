@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.board {
+    height: 100vw;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    height: 12.5%;
+}
+
+.tile {
+    width: 12.5%;
+    height: 100%;
+    background-color: white;
+}
+
+.tile:nth-child(even) {
+    background-color: grey;
+}
+
+.row:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+
+
+/* reverse of row */
+/* .wor {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    flex-grow: 1; */
+}
+
+/* .dark {
+    width: 12.5%;
+    height: 100%;
+    background-color: grey;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.light {
+    width: 12.5%;
+    height: 100%;
+    background-color: lightgrey;
+    flex-grow: 1;
+    align-self: stretch;
+} */
+
