@@ -1,48 +1,56 @@
-body {
-    display: flex-inline;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    border: 2px solid black;
-    align-content: stretch;
+* {
     padding: 0;
     margin: 0;
- 
+    box-sizing: border-box;
 }
 .board {
-    height: 100vh;
-    overflow: hidden;
+    height: 100vw;
+    border: 2px solid black;
 }
 
 .row {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    flex-grow: 1;
-    align-self: stretch;
-
+    height: 12.5%;
 }
+
+.tile {
+    width: 12.5%;
+    height: 100%;
+    background-color: white;
+}
+
+.tile:nth-child(even) {
+    background-color: grey;
+}
+
+.row:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+
+
 /* reverse of row */
-.wor {
+/* .wor {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: stretch;
-    flex-grow: 1;
+    flex-grow: 1; */
 }
 
-.dark {
-    width: 15vw;
-    height: 15vh;
+/* .dark {
+    width: 12.5%;
+    height: 100%;
     background-color: grey;
     flex-grow: 1;
     align-self: stretch;
 }
 
 .light {
-    width: 15vw;
-    height: 15vh;
+    width: 12.5%;
+    height: 100%;
     background-color: lightgrey;
     flex-grow: 1;
     align-self: stretch;
-}
+} */
+
